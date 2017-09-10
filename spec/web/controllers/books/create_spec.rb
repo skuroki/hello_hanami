@@ -37,6 +37,7 @@ describe Web::Controllers::Books::Create do
     end
 
     it 'dumps errors in params' do
+      skip
       action.call(params)
       errors = action.params.errors
 
